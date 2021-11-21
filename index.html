@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamal Oskouei</title>
+    <meta name="Description" content="Jamal Oskouei, Director, Film maker, Animator">
+    <meta name="Keywords" content="Jamal Oskouei, Director, Film maker, Animator">
+
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <style>
+
+      #customers {
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+        margin-top: 2vh;
+      }
+
+      #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even){background-color: #cecdcd;}
+
+      #customers tr:hover {background-color: #ddd;}
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: rgb(76, 104, 175);
+        color: white;
+      }
+    </style>
+
+</head>
+<body>
+
+  <nav id="menu2">
+    <ul>
+        <li><a onclick="about()">About</a></li>
+        <li><a onclick="honors()">Honors</a> </li>
+        <li><a onclick="demoreel()">Demo Reel</a></li>
+        <li> <a onclick="gallery()">Gallery</a></li>
+        <li> <a onclick="contact()">Contact</a></li>
+    </ul>
+    <ul style="margin: 0; height: 0;">
+        <img onclick="MyFun()" src="tug.png" id="image1"/> 
+    </ul>
+</nav>
+
+    <header>
+        <div class="pic"></div> <h1 class="name1">Jamal Oskouei</h1>
+        
+    </header>
+
+    <hr>
+
+
+
+    <div id="container" >
+        <div id="menu">
+            <a onclick="fix(), about()">About</a></br>
+            <a onclick="fix(), honors()">Honors</a></br>
+            <a onclick="fix(), demoreel()">Demo Reel</a></br>
+            <a onclick="fix(), gallery()">Gallery</a></br>
+            <a onclick="fix(), contact()">Contact</a>
+        </div>
+        <div id="show">
+        </div>
+
+    </div>
+    
+</body>
+
+<script>
+
+
+    function fix(){
+      document.getElementById('menu').style.position = "fixed";
+      document.getElementById('menu').style.marginTop = "15vh";
+    }
+
+    
+    function about(){
+      document.getElementById('show').innerHTML='';
+      document.getElementById('show').insertAdjacentHTML('beforeend',`
+
+<article style="margin-top: 2vh; padding: 30px;">
+<h1 style="font-size: 30px;">About</h1>
+<p> <strong>Jamal Oskouei</strong> (born 21 March 1967 in Isfahan, Iran) is an Iranian movie and animation director and editor. 
+    He lives in Tehran and has experienced directing documentary movies and animations that have nominated and won awards in different festivals around the world.</p>
+
+    <h2>Early life and work</h2>
+    <p>Oskouei, started learning 8-millimeter filmmaking guided with Mohammadreza Abedi in Institute for the Intellectual Development of Children and Young Adults at 14 and started making animations at the age 15.
+         His first animation <strong> The Old Pain</strong> that was filmed on 8-millimeter film won the best animation award from the "cinema of the young festival" of Tehran in 1986.</p>
+
+    <p>His next animation <strong> Duel on table </strong> won the "second student festival"s best animation award in 1988. His first 16-millimeter animation was made in Documentary and Experimental Film Center. He graduated from Iran Broadcasting University in 1994. Started his career in IRIB of Chaharmahal and Bakhtiari Province.</p>     
+
+        Here is some of his later works:
+
+<table id="customers">
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+    </tr>
+
+    <tr>
+      <td>Foot Sound of Water</td>
+      <td>1995</td>
+
+    </tr>
+
+    <tr>
+        <td>The Rain of Love</td>
+        <td>1998</td>
+
+    </tr> 
+
+    <tr>
+        <td>The World of Toys</td>
+        <td>2000</td>
+    </tr> 
+      
+    <tr>
+        <td>Abandoned Citadel</td>
+        <td>2001</td>
+    </tr> 
+
+          
+    <tr>
+        <td>Don't Get Angry Piler</td>
+        <td>2001</td>
+    </tr> 
+
+    <tr>
+        <td>A Figure on Time</td>
+        <td>2002</td>
+    </tr> 
+
+
+    <tr>
+        <td>A Figure on the Universe</td>
+        <td>2003</td>
+    </tr> 
+
+
+    <tr>
+        <td>Sleeping Lion</td>
+        <td>2004</td>
+    </tr> 
+
+    <tr>
+        <td>The Blank Page</td>
+        <td>2005</td>
+    </tr> 
+
+    <tr>
+        <td>The Amphibian</td>
+        <td>2005</td>
+    </tr> 
+
+    <tr>
+        <td>Life River</td>
+        <td>2010</td>
+    </tr> 
+
+    <tr>
+        <td>Ambush</td>
+        <td>2012</td>
+    </tr> 
+
+    <tr>
+        <td>The knot of Love</td>
+        <td>2012</td>
+    </tr> 
+
+    <tr>
+        <td>The Ancient Land</td>
+        <td>2013</td>
+    </tr> 
+
+    <tr>
+        <td>Foot Sound of the Demon</td>
+        <td>2014</td>
+    </tr> 
+
+    <tr>
+        <td>Wind Blows From Anywhere Desires</td>
+        <td>2015</td>
+    </tr> 
+
+    <tr>
+        <td>The Song of Migration</td>
+        <td>2017</td>
+    </tr> 
+
+  </table>
+
+
+</article>
+
+
+      `);
+    }
+
+    function honors(){
+      document.getElementById('show').innerHTML='';
+      document.getElementById('show').insertAdjacentHTML('beforeend',`
+
+      <article style="margin-top: 2vh; padding: 30px;">
+
+<table id="customers">
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>National award</th>
+      <th>International award</th>
+    </tr>
+
+    <tr>
+      <td>Foot Sound of Water</td>
+      <td>1995</td>
+      <td>  Best documentary (States' Broadcasting Centers' Festival) </br>
+            Best documentary (Tehran's First Cinema Festival) 
+        </td>
+      <td>-</td>
+    </tr>
+
+    <tr>
+        <td>The Rain of Love</td>
+        <td>1998</td>
+        <td>Best Clip (States' Broadcasting Centers' Festival)</td>
+        <td>-</td>
+    </tr> 
+
+    <tr>
+        <td>The World of Toys</td>
+        <td>2000</td>
+        <td>Best animation (States' Broadcasting Centers' Festival)</td>
+        <td>Best animation (First Dubai Short Film Festival)</td>
+    </tr> 
+      
+    <tr>
+        <td>Abandoned Citadel</td>
+        <td>2001</td>
+        <td>Best narrative film (States' Broadcasting Centers' Festival)</td>
+        <td>-</td>
+    </tr> 
+
+    <tr>
+      <td>Don't Get Angry Piler</td>
+      <td>2001</td>
+      <td>Best animation (States' Broadcasting Centers' Festival - Yazd)</td>
+      <td>Best animation (Second Dubai Short Film Festival)</td>
+  </tr> 
+
+    <tr>
+        <td>A Figure on Time</td>
+        <td>2002</td>
+        <td>Best animation (Ruyesh Film Festival)</td>
+        <td>-</td>
+    </tr> 
+
+
+    <tr>
+        <td>A Figure on the Universe</td>
+        <td>2003</td>
+        <td>Best Clip (Ruyesh Film Festival)</td>
+        <td>-</td>
+    </tr> 
+
+
+    <tr>
+        <td>Sleeping Lion</td>
+        <td>2004</td>
+        <td>Best Clip (RedGold Film Festival)</td>
+        <td>-</td>
+    </tr> 
+
+
+    <tr>
+        <td>Life River</td>
+        <td>2010</td>
+        <td>Best documentary (Tehran Short Film Festival)</td>
+        <td>Best documentary (Slovakia Ekotopfilm Festival)</br>
+        Best documentry (спасти и сохранить Russian Festival)</td>
+    </tr> 
+
+    <tr>
+        <td>Ambush</td>
+        <td>2012</td>
+        <td>Best animation (Hamedan Pray and Prayer Film Festival)</td>
+        <td>-</td>
+    </tr> 
+
+    <tr>
+        <td>Wind Blows From Anywhere Desires</td>
+        <td>2015</td>
+        <td>Best edit (Tehran Short Film Festival) </td>
+        <td></td>
+    </tr> 
+
+  </table>
+
+
+</article>
+
+      `);
+    }
+
+    function gallery(){
+      document.getElementById('show').innerHTML='';
+      document.getElementById('show').insertAdjacentHTML('beforeend',`
+
+
+      <div id="gallery">
+
+ 
+<h2 style="margin-top: 5vh;">Here are some of the pictures related to Oskouie's works:</h2>
+<h3 style="margin-top: 2vh;">Don't Get Angry Piler:</h3>
+<img class="lazy" src="./pics/anbori.bmp" data-src="./pics/anbori.bmp" data-srcset="./pics/anbori.bmp" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/anbori 2.bmp" data-src="./pics/anbori 2.bmp" data-srcset="./pics/anbori 2.bmp" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/anbori 3.bmp" data-src="./pics/anbori 3.bmp" data-srcset="./pics/snbori 3.bmp" alt="Jamal Oskouei">
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">Song of Migration:</h3>
+<img class="lazy" src="./pics/arang kuch .JPG" data-src="./pics/arang kuch .JPG" data-srcset="./pics/arang kuch .JPG" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/arang kuch  (1).jpg" data-src="./pics/arang kuch  (1).jpg" data-srcset="./pics/arang kuch  (1).jpg" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/arang kuch  (2).jpg" data-src="./pics/arang kuch  (2).jpg" data-srcset="./pics/arang kuch  (2).jpg" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/arang kuch  (3).jpg" data-src="./pics/arang kuch  (3).jpg" data-srcset="./pics/arang kuch  (3).jpg" alt="Jamal Oskouei">
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">The Blank Page:</h3>
+<img class="lazy" src="./pics/barge sefid  (1).bmp" data-src="./pics/barge sefid  (1).bmp" data-srcset="./pics/barge sefid  (1).bmp" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/barge sefid  (2).bmp" data-src="./pics/barge sefid  (2).bmp" data-srcset="./pics/barge sefid  (2).bmp" alt="Jamal Oskouei">
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">The Amphibian:</h3>
+<img class="lazy" src="./pics/do zist  (1).jpg" data-src="./pics/do zist  (1).jpg" data-srcset="./pics/do zist  (1).jpg" alt="Jamal Oskouei">
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">The Knot of Love:</h3>
+<img class="lazy" src="./pics/gere eshgh  (1).JPG" data-src="./pics/gere eshgh  (1).JPG" data-srcset="./pics/gere eshgh  (1).JPG" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/gere eshgh  (2).JPG" data-src="./pics/gere eshgh  (2).JPG" data-srcset="./pics/gere eshgh  (2).JPG" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/gere eshgh  (3).JPG" data-src="./pics/gere eshgh  (3).JPG" data-srcset="./pics/gere eshgh  (3).JPG" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/gere eshgh  (4).JPG" data-src="./pics/gere eshgh  (4).JPG" data-srcset="./pics/gere eshgh  (4).JPG" alt="Jamal Oskouei">
+
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">The Ambush:</h3>
+<img class="lazy" src="./pics/kamin  (3).bmp" data-src="./pics/kamin  (3).bmp" data-srcset="./pics/kamin  (3).bmp" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/kamin  (4).bmp" data-src="./pics/kamin  (4).bmp" data-srcset="./pics/kamin  (4).bmp" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/kamin  (5).bmp" data-src="./pics/kamin  (5).bmp" data-srcset="./pics/kamin  (5).bmp" alt="Jamal Oskouei">
+
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">A Figure on Universe:</h3>
+<img class="lazy" src="./pics/Picture  - jahan.jpg" data-src="./pics/Picture  - jahan.jpg" data-srcset="./pics/Picture  - jahan.jpg" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/Picture  - jahan 2 .jpg" data-src="./pics/Picture  - jahan 2 .jpg" data-srcset="./pics/Picture  - jahan 2 .jpg" alt="Jamal Oskouei">
+
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">Footsound of the Demon:</h3>
+<img class="lazy" src="./pics/seday pay div .JPG" data-src="./pics/seday pay div .JPG" data-srcset="./pics/seday pay div .JPG" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/seday paye div .JPG" data-src="./pics/seday paye div .JPG" data-srcset="./pics/seday paye div .JPG" alt="Jamal Oskouei">
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">Sleeping Lion:</h3>
+<img class="lazy" src="./pics/shir.png" data-src="./pics/shir.png" data-srcset="./pics/shir.png" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/shir 2.bmp" data-src="./pics/shir 2.bmp" data-srcset="./pics/shir 2.bmp" alt="Jamal Oskouei">
+
+
+<hr>
+<hr>
+<hr>
+
+<h3 style="margin-top: 2vh;">Life River:</h3>
+<img class="lazy" src="./pics/zende rud .jpg" data-src="./pics/zende rud .jpg" data-srcset="./pics/zende rud .jpg" alt="Jamal Oskouei">
+<img class="lazy" src="./pics/zende rud 3.bmp" data-src="./pics/zende rud 3.bmp" data-srcset="./pics/zende rud 3.bmp" alt="Jamal Oskouei">
+
+
+      `);
+    }
+
+    function demoreel(){
+      document.getElementById('show').innerHTML='';
+      document.getElementById('show').insertAdjacentHTML('beforeend',`
+
+      <h3>The Song of Migration:</h3>
+        
+        <video width="60%" controls>
+            <source src="./demo/arang final 2-.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+        <h3>Dont Get Angry Piler:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/asabani nasho.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>The World of Toys:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/asbab bazi.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>The Blank Page:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/barge  sefid.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+    
+        <h3>The Amphibian:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/do zist_1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>The Knot of Love:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/final gere 02.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>A Figure on the Universe:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/naghshi bar jahan 2 .mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>Sleeping Lion:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/shir khofte 2 .mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+    
+        <h3>The Life River:</h3>
+            
+        <video width="60%" controls>
+            <source src="./demo/zenderud.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    
+        
+    
+    
+      `);
+    }
+
+    function contact(){
+      document.getElementById('show').innerHTML='';
+      document.getElementById('show').insertAdjacentHTML('beforeend',`
+
+      <article style="margin-top: 2vh; padding: 30px;">
+      <h1 style="font-size: 30px;"> <strong>Contact information:</strong></h1>
+      <h2>E-mail: jamal.oskooee@gmail.com</h2>
+      </article>
+    
+    
+      `);
+    }
+
+
+
+  </script>
+<script>
+    
+
+  var i = 0;
+  function MyFun(){
+      
+      if (i==0){
+      document.getElementById('menu2').style.left = "0vw";
+      document.getElementById('image1').style.transform="rotate(180deg)";
+      i=1;}
+
+      else {
+      document.getElementById('menu2').style.left = "-35vw";
+      document.getElementById('image1').style.transform="rotate(0deg)";
+      i=0;}
+  }
+
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+let active = false;
+
+const lazyLoad = function() {
+  if (active === false) {
+    active = true;
+
+    setTimeout(function() {
+      lazyImages.forEach(function(lazyImage) {
+        if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+
+          lazyImages = lazyImages.filter(function(image) {
+            return image !== lazyImage;
+          });
+
+          if (lazyImages.length === 0) {
+            document.removeEventListener("scroll", lazyLoad);
+            window.removeEventListener("resize", lazyLoad);
+            window.removeEventListener("orientationchange", lazyLoad);
+          }
+        }
+      });
+
+      active = false;
+    }, 200);
+  }
+};
+
+document.addEventListener("scroll", lazyLoad);
+window.addEventListener("resize", lazyLoad);
+window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+
+</html>
